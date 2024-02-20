@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/about', function () {
+    return 'NIM : 2241720051 <br> Nama : Cinthya Achwatul Ifnu';
+});
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +20,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/hello', function () {
+    return 'Hello World';
+});
+
+Route::get('/world', function () {
+    return 'World';
+});
+
+Route::get('/selamatdatang', function () {
+    return 'Selamat Datang';
+});
+
+Route::get('/about', function () {
+    return 'NIM : 2241720051 <br> Nama : Cinthya Achwatul Ifnu';
 });
